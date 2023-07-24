@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+    	<title>TagTastic</title>
+    	<link rel="stylesheet" href="./css/style.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+
+	<header>
+	<section id="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="leaderboard.html">Leaderboard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+</header>
+
+	<!---------Blog------------->
+	<section id="blog">
+		<div class="blog">
+			<h1 class="title text-center">Blog</h1>
+			<h4>Our Journey so Far</h4>
+		</div>
+	</section>
+	<hr>
+	<section id="content-container">
+		<div class="content">
+			<h2>08/10/2020</h2>
+			<div class="featured-post">
+				<p>
+					We are a team of Computer Science and Cyber Security students from Aston University. The goal of our team is to create an online multiplayer game. We began by discussing ideas and came to decision on our concept called TagTastic.
+				</p>
+			</div>
+			<h3>19/10/2020</h3>
+			<p>
+			In our next meeting we discussed our strengths and weaknesses, we came to understand the skills that each of us currently bring to the project and the skills we can learn from each other. Through this discussion we split the team in to four separate groups of two each dealing with one of the four submissions.</p>
+			<p>
+				The Hack - Alexander Lougheed & Mohammed Shaffique<br>
+				 Project Website - Hamza Osman & Khondokar Hassan<br>
+				 Design Document - Emmanuel Owoaje & Syed Jafferi<br>
+				 Software Quality Strategy - Adrian Christian & Siddiqur Rahman
+				</p>
+				<h3>09/11/2020</h3>
+				<p>
+					Nearing the deadline of the second submission we discussed the final touches needed for this submission. The Software Quality Strategy and the first version of our Project Website was completed, so available team members helped with the finishing touches of the Hack and the Design Document. For the Hack we currently have two players that spawn that are controlled by wasd and arrows independently on one pc, a tag that spawns, collision detection between the players, detection when a player picks up the tag and stealing the tag from the other player. 
+				</p>
+				<h3>19/11/2020</h3>
+				<p>
+					After our recent submission, the team needed reorganising, we focused on learning new skills to help develop the MVP. Regarding the Project Website, we have taken the advice of the critics and ensured that we will have a consistent theme between the MVP and Website. The website must caster to the range of audiences that our game is deveopled for.
+				</p>
+				<div class="another-post">
+					<h3>MVP showcase 01/12/2020</h3>
+					<p>
+						At this moment we are in the development stage of the MVP and are planning to release it soon.
+						So, we were originally going to be using lwjgl 3 but due to the very specific setup requirements and number of difficulties we had using it we decided to switch over to unity and using Mirror as a server solution to our problems. So far, the server system is setup and we have set up basic game. The server system allows for a dedicated server or it allows one of the client systems to act as a server host as well so other plays can connect to a custom made game lobby as you can choose the server you join. (The game has an input for server IP to join) as well as having a choice if you want to host your own server and play on it from the same system. Unity allows us to use ParrelSync which allows us to have multiple clients active at the same time on our computers so we can test how the game works from every individual user's perspective, but for testing purposes is only set to be 4 players due to the physical logistics of trying to use 8 different clients at once on the same system. But this is very simple to change, At the moment we are working on implementing the maze for the system, and menu GUI's, while we am working on creating all the functions for each aspect so they are ready to be implemented once they are done with minimal coding required at that point to have a quicker deployment. We still must implement better player models which are being discussed and powerups still need to be implemented. Things like the fog and map we will implement later out of caution for making the deadline to ensure we have a fully functional MVP.
+					</p>
+				</div>
+
+				<div class="another-post">
+					<h3> Implementing GUI 20/02/2021</h3>
+					<p> 
+						- Took onboard the advice of the critics.<br>
+						- Implementing GUI with game version of the MVP.<br>
+						- Added some UI buttons for mirror.
+						- GUI implementation script modification, requires testing and implementing.<br>
+						- Adding game exiting by pressing esc.<br>
+						- GUI implemented.<br>
+					</p>
+				</div>
+				<div class="another-post">
+					<h3> Further work 16/03/2021</h3>
+					<p>
+						- Pre implentation of leaderboard.<br>
+						- Leaderboard pre-implementation, needs to pass username from the GUI.<br>
+						- Leaderboard implemented.<br>
+						- SpeedUp powerup value changed to a bit slower, requires test.<br>
+
+					</p>
+				</div>
+				<div class="another-post">
+					<h3> Completing Game 25/03/2021</h3>
+					<p>
+						- Attempt client timer fix failed.<br>
+						- Main scene text label for timer increased in size.<br>
+						- Wall breaking for clients, not for host, timer bug fixed.<br>
+						- Volume slider implemented, needs finetuning in graphics.<br>
+						- Most known bugs appear to be fixed.<br>
+						- Added powerup images, needs testing.<br>
+						- Fixed timer problem on clients.<br>
+						- Added indicator colours for enemies and player.<br>
+						- Final testing stage.<br>
+					</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>TagTastic, Copyright &copy; 2020</p>
+		</footer>
+</body>
+</html>
